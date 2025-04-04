@@ -38,7 +38,7 @@ app.delete("/api/products/:id", async (req, res) => {
     } catch (error) {
         res.status(404).json({success: false, message: "Product not found"})
     }
-})
+});
 
 app.listen(5000, () => {
     connectDB();
