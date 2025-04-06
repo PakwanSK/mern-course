@@ -5,8 +5,10 @@ import { IoMoon } from "react-icons/io5";
 import { LuSun } from "react-icons/lu";
 import { useColorMode } from "@/components/ui/color-mode"
 
+
 const Navbar = () => {
     const { colorMode, toggleColorMode } = useColorMode();
+
     return (
         <Container maxW={"1140px"} px={4}>
             <Flex
@@ -26,7 +28,7 @@ const Navbar = () => {
                         letterSpacing="tight"
                         _hover={{ color: "blue.600" }}
                     >
-                        Product Store
+                        Product Store 🛒
                     </Text>
                 </Link>
                 <HStack spacing={2} alignItems={"center"}>
