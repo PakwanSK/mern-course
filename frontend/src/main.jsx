@@ -1,17 +1,15 @@
-import React from 'react'
-import { Provider } from "@/components/ui/provider"
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import { BrowserRouter } from 'react-router-dom'
-import Navbar from "./component/Navbar"
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import { ChakraProvider } from "@chakra-ui/react";
+import { BrowserRouter } from "react-router-dom";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <Provider>
-        <Navbar />
-        <App />
-      </Provider>
-    </BrowserRouter>
-  </React.StrictMode>,
-)
+ReactDOM.createRoot(document.getElementById("root")).render(
+	<React.StrictMode>
+		<BrowserRouter>
+			<ChakraProvider>
+				<App />
+			</ChakraProvider>
+		</BrowserRouter>
+	</React.StrictMode>
+);
